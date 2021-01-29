@@ -29,9 +29,12 @@ CMD ["pm2-runtime", "start", "start.config.js"]
 //배포 스크립트
 ```
 cd  /mnt/jenkins_test/nodejs-jenkins-docker
-git pull origin master
-docker build -t node-server-image .
+
 docker stop node-server
 docker rm node-server
+docker rmi node-server-image
+
+git pull origin master
+docker build -t node-server-image .
 docker run -d -p 8000:8000 --name node-server node-server-image
 ```
