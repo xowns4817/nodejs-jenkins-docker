@@ -30,9 +30,9 @@ CMD ["pm2-runtime", "start", "start.config.js"]
 ```
 cd  /mnt/jenkins_test/nodejs-jenkins-docker
 
-docker stop node-server
-docker rm node-server
-docker rmi node-server-image
+docker stop node-server || true
+docker rm node-server || true
+docker rmi node-server-image || true
 
 git pull origin master
 docker build -t node-server-image .
