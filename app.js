@@ -27,6 +27,11 @@ app.get("/eee", function(req, res) {
     res.send("/eee");
 });
 
+app.get("/fff", function(req, res) {
+    res.send("/fff");
+});
+
+
 
 app.listen(8000, function(req, res) {
     console.log("server on 8000!");
