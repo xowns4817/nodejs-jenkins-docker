@@ -17,7 +17,11 @@ app.get("/bbb", function(req, res) {
 
 app.get("/ccc", function(req, res) {
     res.send("/ccc");
-   });
+});
+
+app.get("/ddd", function(req, res) {
+    res.send("/ddd");
+});
 
 
 app.listen(8000, function(req, res) {
