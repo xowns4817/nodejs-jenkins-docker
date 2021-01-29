@@ -13,7 +13,12 @@ app.get("/aaa", function(req,res) {
 
 app.get("/bbb", function(req, res) {
  res.send("/bbb");
-})
+});
+
+app.get("/ccc", function(req, res) {
+    res.send("/ccc");
+   });
+
 
 app.listen(8000, function(req, res) {
     console.log("server on 8000!");
