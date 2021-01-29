@@ -23,6 +23,10 @@ app.get("/ddd", function(req, res) {
     res.send("/ddd");
 });
 
+app.get("/eee", function(req, res) {
+    res.send("/eee");
+});
+
 
 app.listen(8000, function(req, res) {
     console.log("server on 8000!");
